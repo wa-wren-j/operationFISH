@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript" type="text/javascript" src="p5.js"></script>
+    <script language="javascript" type="text/javascript" src="p5.serialport.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        #every {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #top {
+            position: absolute;
+            z-index: 1;
+            height: 50px;
+            font-family: 'Press Start 2P', cursive;
+            margin: -50px 100px;
+            color: #fff;
+            font-size: 3vw;
+        }
+
+        #top2 {
+            grid-column: 2;
+            position: absolute;
+            right: 0;
+            margin: -50px 300px;
+            z-index: 1;
+            height: 50px;
+            font-family: 'Press Start 2P', cursive;
+            color: #fff;
+            font-size: 3vw;
+        }
+        
+        #popUP {
+            font-family: 'Press Start 2P', cursive;
+            z-index: 1;
+            position: absolute;
+            width: 50vw;
+            margin: 10% 25%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: #004BA8;
+            color: #fff;
+            border: 5px #FFFFB3 solid;
+        }
+        
+        #text h1{
+            font-size: 2vw;
+            text-align: center;
+        }
+        
+        #text p {
+            line-height: 1.8vw;
+            padding: 30px;
+            font-size: 1.4vw;
+        }
+        
+        #congrat {
+            padding: 5px;
+        }
+        
+        #defaultCanvas0 {
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body onload="hideMe()">
+
+    <div id="every">
+
+        <div id="top">
+            <p>NAME</p>
+        </div>
+
+        <div id="top2">
+            <p>090</p>
+        </div>
+
+        <div id="popUP">
+            <div id="text">
+                <h1>GREAT JOB!</h1>
+                <p>
+                    YOU PULLED A STRAW FROM THE FISH!
+                    <br><br>
+                    DID YOU KNOW THERE ARE AN ESTIMATED 8.3 BILLION PLASTIC STRAWS POLLUTING THE WORLD'S BEACHES?
+                </p>
+            </div>
+            <div id="image"><img id="congrat" src="asset/congrat.png"</div>
+        </div>
+
+    </div>
+
+</body></html>
